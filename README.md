@@ -14,6 +14,12 @@ Simple project to virtualize rice cooker behavior.
 
 ## Getting started
 
+. Install go linter
+
+```
+go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.2
+```
+
 . Build the dao pakcage to give dependancy to the main package
 
 ```
@@ -25,6 +31,13 @@ go build
 
 ```
 go run main.go
+```
+
+### Linter
+. Use the following code to execute the linter
+
+```
+golangci-lint run
 ```
 
 

@@ -5,21 +5,21 @@ import (
 	"time"
 )
 
-func initiateRiceCooker() *RiceCooker {
+func InitiateRiceCooker() *RiceCooker {
 	riceCooker := &RiceCooker{}
 	return riceCooker
 }
 
-func initiateFood() *Food {
+func InitiateFood() *Food {
 	food := &Food{}
 	return food
 }
 
-func powerOn(rc *RiceCooker) {
+func PowerOn(rc *RiceCooker) {
 	rc.power = true
 }
 
-func (rc *RiceCooker) cook(food *Food, cookingTime time.Duration) {
+func (rc *RiceCooker) Cook(food *Food, cookingTime time.Duration) {
 	if !rc.power {
 		fmt.Println("Error: Rice cooker is not powered on.")
 		return
