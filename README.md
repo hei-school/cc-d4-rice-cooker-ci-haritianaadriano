@@ -13,7 +13,16 @@ Simple project to virtualize rice cooker behavior.
 . go version: go1.21.5
 
 ## Getting started
-Change directory to main and run the following command
+
+. Build the dao pakcage to give dependancy to the main package
+
+```
+cd dao
+go build
+```
+
+. Change directory to main and run the following command
+
 ```
 go run main.go
 ```
