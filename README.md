@@ -3,7 +3,7 @@
 Simple project to virtualize rice cooker behavior.
 
 ## Features 
-. Cook rice, beans or other with this rice cooker
+. Cook rice, beans or what you want with this rice cooker
 
 . Set a specific duration to cook 
 
