@@ -8,50 +8,38 @@ import (
 )
 
 func main() {
-	// Initialize rice cooker and food
-	riceCooker := dao.InitiateRiceCooker()
-	food := dao.InitiateFood()
+	for {
+		riceCooker := dao.InitiateRiceCooker()
+		food := dao.InitiateFood()
 
-	// Display home view
-	view.HomeView()
+		view.HomeView()
 
-	// Read user input
-	var choice int
-	fmt.Print("Enter your choice: ")
-	_, err := fmt.Scanln(&choice)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
+		var choice int
+		fmt.Print("Enter your choice: ")
+		fmt.Scanln(&choice)
 
-	// Perform action based on user choice
-	switch choice {
-	case 1:
-		// Create a food
-		fmt.Print("Enter food name: ")
-		_, err := fmt.Scanln(&food.food)
-		if err != nil {
-			fmt.Println("Error:", err)
-			return
+		switch choice {
+		case 1:
+			fmt.Println("Food created:")
+		case 2:
+			riceCooker.PowerOn()
+			fmt.Println("Rice cooker initiated.")
+		case 3:
+			fmt.Print("Enter cooking time (in seconds): ")
+			var cookingTime int
+			fmt.Scanln(&cookingTime)
+			duration := time.Duration(cookingTime) * time.Second
+			riceCooker.Cook(food, duration)
+		default:
+			fmt.Println("Invalid choice.")
 		}
-		food.isFood = true
-		fmt.Println("Food created:", food.food)
-	case 2:
-		// Iniate rice cooker
-		dao.PowerOn(riceCooker)
-		fmt.Println("Rice cooker initiated.")
-	case 3:
-		// Cook
-		fmt.Print("Enter cooking time (in seconds): ")
-		var cookingTime int
-		_, err := fmt.Scanln(&cookingTime)
-		if err != nil {
-			fmt.Println("Error:", err)
-			return
+
+		var continueChoice string
+		fmt.Print("Do you want to continue? (yes/no): ")
+		fmt.Scanln(&continueChoice)
+
+		if continueChoice != "yes" {
+			break
 		}
-		duration := time.Duration(cookingTime) * time.Second
-		riceCooker.Cook(food, duration)
-	default:
-		fmt.Println("Invalid choice.")
 	}
 }

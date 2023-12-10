@@ -6,16 +6,20 @@ import (
 )
 
 func InitiateRiceCooker() *RiceCooker {
-	riceCooker := &RiceCooker{}
-	return riceCooker
+	riceCooker := NewRiceCooker()
+		return riceCooker
 }
 
 func InitiateFood() *Food {
-	food := &Food{}
+	food := NewFood("food")
 	return food
 }
 
-func PowerOn(rc *RiceCooker) {
+func IsFood(f *Food) {
+	f.isFood = true
+} 
+
+func (rc *RiceCooker) PowerOn() {
 	rc.power = true
 }
 
@@ -44,5 +48,5 @@ func (rc *RiceCooker) Cook(food *Food, cookingTime time.Duration) {
 		time.Sleep(time.Second)
 	}
 
-	fmt.Println("\nCooking completed! Enjoy your", rc.food.food)
+	fmt.Println("\nCooking completed! Enjoy your", rc.food.foodName)
 }
