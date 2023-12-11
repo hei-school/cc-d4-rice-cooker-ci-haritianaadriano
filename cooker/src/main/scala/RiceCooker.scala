@@ -27,7 +27,7 @@ class RiceCooker {
     this.cookingTime = time
   }
 
-  def getFood(): List[Food] = food
+  def getFood(): String = food.mkString(", ")
   def addFood(food: Food): List[Food] = {
     this.food :+ food
   }
