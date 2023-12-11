@@ -1,7 +1,7 @@
 class RiceCooker 
     attr_accessor :power, :is_open, :capacity, :food, :cooking_duration
 
-    def initialize(power, is_open, capacity, food = [], cooking_duration) 
+    def initialize(power=false, is_open=true, capacity=0, food = [], cooking_duration=0) 
         @power = power
         @is_open = is_open
         @capacity = capacity
