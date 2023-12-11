@@ -1,6 +1,5 @@
-require_relative "../model/Food.rb"
+require_relative '../model/Food'
 
 def initialize_food(name, weight)
-    food = Food.new(name, true, weight)
-    return food
-end    
+  Food.new(name, true, weight)
+end
