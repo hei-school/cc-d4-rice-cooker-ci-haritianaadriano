@@ -1,2 +1,12 @@
-[debug] downloaded https://repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.pom
-[debug] downloaded https://repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar
+[debug] downloaded https://repo1.maven.org/maven2/ch/epfl/scala/sbt-scalafix_2.12_1.0/0.11.1/sbt-scalafix_2.12_1.0-0.11.1.pom
+[debug] downloaded https://repo1.maven.org/maven2/io/get-coursier/interface/1.0.18/interface-1.0.18.pom
+[debug] downloaded https://repo1.maven.org/maven2/ch/epfl/scala/scalafix-interfaces/0.11.1/scalafix-interfaces-0.11.1.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.2.202306221912-r/org.eclipse.jgit-5.13.2.202306221912-r.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/5.13.2.202306221912-r/org.eclipse.jgit-parent-5.13.2.202306221912-r.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
+[debug] downloaded https://repo1.maven.org/maven2/ch/epfl/scala/scalafix-interfaces/0.11.1/scalafix-interfaces-0.11.1.jar
+[debug] downloaded https://repo1.maven.org/maven2/ch/epfl/scala/sbt-scalafix_2.12_1.0/0.11.1/sbt-scalafix_2.12_1.0-0.11.1.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.2.202306221912-r/org.eclipse.jgit-5.13.2.202306221912-r.jar
+[debug] downloaded https://repo1.maven.org/maven2/io/get-coursier/interface/1.0.18/interface-1.0.18.jar
