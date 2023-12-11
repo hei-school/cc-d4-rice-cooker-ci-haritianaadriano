@@ -1,4 +1,5 @@
 @main
 def main(): Unit = {
-  println("Hello world!")
+  val app: app = new app()
+  app.app()
 }

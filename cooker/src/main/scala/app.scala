@@ -21,6 +21,9 @@ class app {
         case 4 => riceCooker.getFood()
         case 1 => {
           view.printCreateFood()
+          println("insert cooker capacity: ")
+          val cookerCapacity = readInt()
+          riceCooker.setCapacity(cookerCapacity)
           println("insert food name: ")
           var newFood: Food = new Food()
           val foodName = readLine()
