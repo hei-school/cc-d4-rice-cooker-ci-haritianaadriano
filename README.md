@@ -19,7 +19,17 @@ Simple project to virtualize rice cooker behavior.
 . move to the following directory
 
 ```
-cd /cooker/src/main/scala
+cd cooker/src/main/scala
 ```
 
-. execute the main.scala via the idea
+. then compile the code 
+
+```
+scalac && scala main.class
+```
+
+. or execute the main.scala via the idea
+
+## Linter
+. As linter we use scalafix where the conf is in the .scalafix.conf
+. By default the scalafix run during the code compile
