@@ -1,0 +1,88 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.7 (Oracle Corporation Java 18.0.1.1)
+[debug] Load.defaultLoad until apply took 225.2972ms
+[debug]           Load.loadUnit: plugins took 194.2187ms
+[debug]           Load.loadUnit: defsScala took 0.8257ms
+[debug] [Loading] Scanning directory C:\Users\HP\Desktop\JS_train\rice-cooker\cc-d2-my-rice-cooker-haritianaadriano\cooker\project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\HP\Desktop\JS_train\rice-cooker\cc-d2-my-rice-cooker-haritianaadriano\cooker\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 44.0063 ms
+[debug]               Load.resolveProject(cooker-build) took 125.2266ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id cooker-build, base: C:\Users\HP\Desktop\JS_train\rice-cooker\cc-d2-my-rice-cooker-haritianaadriano\cooker\project, plugins: List(<none>))) took 218.3276ms
+[debug] [Loading] Done in C:\Users\HP\Desktop\JS_train\rice-cooker\cc-d2-my-rice-cooker-haritianaadriano\cooker\project, returning: (cooker-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 272.9307ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.5603ms
+[debug]         Load.loadUnit(file:/C:/Users/HP/Desktop/JS_train/rice-cooker/cc-d2-my-rice-cooker-haritianaadriano/cooker/project/, ...) took 482.6672ms
+[debug]       Load.apply: load took 844.2838ms
+[debug]       Load.apply: resolveProjects took 15.8143ms
+[debug]       Load.apply: finalTransforms took 155.985ms
+[debug]       Load.apply: config.delegates took 20.7434ms
+[debug]       Load.apply: Def.make(settings)... took 812.2629ms
+[debug]       Load.apply: structureIndex took 184.2576ms
+[debug]       Load.apply: mkStreams took 2.9684ms
+[info] loading project definition from C:\Users\HP\Desktop\JS_train\rice-cooker\cc-d2-my-rice-cooker-haritianaadriano\cooker\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 7504.7918ms
+[debug]     Load.loadUnit: defsScala took 0.0042ms
+[debug] [Loading] Scanning directory C:\Users\HP\Desktop\JS_train\rice-cooker\cc-d2-my-rice-cooker-haritianaadriano\cooker
+[debug]       Load.loadUnit: mkEval took 6.078ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 5.0198 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 5.6671ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\HP\Desktop\JS_train\rice-cooker\cc-d2-my-rice-cooker-haritianaadriano\cooker, plugins: List(<none>))) took 13.1141ms
+[debug] [Loading] Done in C:\Users\HP\Desktop\JS_train\rice-cooker\cc-d2-my-rice-cooker-haritianaadriano\cooker, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 4690.845ms
+[debug]     Load.loadUnit: cleanEvalClasses took 26.14ms
+[debug]   Load.loadUnit(file:/C:/Users/HP/Desktop/JS_train/rice-cooker/cc-d2-my-rice-cooker-haritianaadriano/cooker/, ...) took 12225.254ms
+[debug] Load.apply: load took 12276.837ms
+[debug] Load.apply: resolveProjects took 0.1723ms
+[debug] Load.apply: finalTransforms took 40.4105ms
+[debug] Load.apply: config.delegates took 0.9248ms
+[debug] Load.apply: Def.make(settings)... took 216.0699ms
+[debug] Load.apply: structureIndex took 114.8486ms
+[debug] Load.apply: mkStreams took 0.0039ms
+[info] set current project to cooker (in build file:/C:/Users/HP/Desktop/JS_train/rice-cooker/cc-d2-my-rice-cooker-haritianaadriano/cooker/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:sbt-server-1effd8399e1525db19df
+[debug] Writing bsp connection file
+[info] started sbt server
