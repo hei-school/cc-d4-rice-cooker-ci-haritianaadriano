@@ -11,6 +11,5 @@ Simple project to virtualize rice cooker behavior.
 
 
 ## Requirements
-[ruby dependancy](https://github.com/hei-school/cc-d2-my-rice-cooker-haritianaadriano/tree/feature/ruby)
 
-[go dependancy](https://github.com/hei-school/cc-d2-my-rice-cooker-haritianaadriano/tree/feature/go)
+. scala version: 3.3.1 
