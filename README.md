@@ -13,3 +13,13 @@ Simple project to virtualize rice cooker behavior.
 ## Requirements
 
 . scala version: 3.3.1 
+
+## Getting started
+
+. move to the following directory
+
+```
+cd /cooker/src/main/scala
+```
+
+. execute the main.scala via the idea
