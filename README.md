@@ -15,4 +15,6 @@ Simple project to virtualize rice cooker behavior.
 
 [go dependancy](https://github.com/hei-school/cc-d2-my-rice-cooker-haritianaadriano/tree/feature/go)
 
-[scala dependacy](https://github.com/hei-school/cc-d2-my-rice-cooker-haritianaadriano/tree/feature/scala)
+[scala dependancy](https://github.com/hei-school/cc-d2-my-rice-cooker-haritianaadriano/tree/feature/scala)
+
+[c dependancy](https://github.com/hei-school/cc-d2-my-rice-cooker-haritianaadriano/tree/feature/c)
