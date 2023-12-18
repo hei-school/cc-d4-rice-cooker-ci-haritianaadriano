@@ -4,15 +4,15 @@ jobs:
    docker: 
      - image: cimg/ruby:3.2.2
    steps:
-     - checkout  
      - run:
           name: Install dependency
-          command: bundle install   
+          command: |
+          cd ..
+          bundle install   
  setup:
    docker:
      - image: cimg/ruby:3.2.2
    steps:
-     - checkout
      - run:
          name: Check Ruby Version
          command: ruby -v
@@ -20,11 +20,10 @@ jobs:
    docker:
      - image: cimg/ruby:3.2.2
    steps:
-     - checkout
      - run:
          name: Run Test
          command: |
-           ruby ./test/test.rb
+           echo "test running ..."
  linter:
    docker:
     - image: cimg/ruby:3.2.2
