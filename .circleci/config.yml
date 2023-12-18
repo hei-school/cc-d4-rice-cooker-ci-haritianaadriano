@@ -1,22 +1,25 @@
 version: 2.1
 jobs:
-  setup:
-    docker:
-      - image: cimg/ruby:2.4.0-alpine
-    steps:
-      - checkout
-      - run: |
-      ruby -v
-  test:
-    docker:
-      - image: cimg/ruby:2.4.0-alpine
-    steps:
-      - checkout
-      - run: |
-      cd test/
-      ruby test.rb
+ setup:
+   docker:
+     - image: cimg/ruby:2.4.0-alpine
+   steps:
+     - checkout
+     - run:
+         name: Check Ruby Version
+         command: ruby -v
+ test:
+   docker:
+     - image: cimg/ruby:2.4.0-alpine
+   steps:
+     - checkout
+     - run:
+         name: Run Test
+         command: |
+           cd test/
+           ruby test.rb
 workflows:
-  run:
-    jobs:
-      - setup
-      - test
+ run:
+   jobs:
+     - setup
+     - test
