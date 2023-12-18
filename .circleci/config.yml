@@ -6,8 +6,7 @@ jobs:
    steps:
      - run:
           name: Install dependency
-          command: |
-          bundle install   
+          command: bundle install   
  setup:
    docker:
      - image: cimg/ruby:3.2.2
@@ -21,8 +20,7 @@ jobs:
    steps:
      - run:
          name: Run Test
-         command: |
-           echo "test running ..."
+         command: echo "test running ..."
  linter:
    docker:
     - image: cimg/ruby:3.2.2
