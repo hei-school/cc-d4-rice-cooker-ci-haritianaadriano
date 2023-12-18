@@ -2,7 +2,7 @@ version: 2.1
 jobs:
  setup:
    docker:
-     - image: cimg/ruby:2.4.0-alpine
+     - image: cimg/ruby:3.2.2
    steps:
      - checkout
      - run:
@@ -10,7 +10,7 @@ jobs:
          command: ruby -v
  test:
    docker:
-     - image: cimg/ruby:2.4.0-alpine
+     - image: cimg/ruby:3.2.2
    steps:
      - checkout
      - run:
