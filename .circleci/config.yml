@@ -15,6 +15,7 @@ jobs:
          name: Run Test
          command: |
            cd test/
+           ls -al
            ruby test.rb
 workflows:
  run:
