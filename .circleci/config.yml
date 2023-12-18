@@ -1,5 +1,12 @@
 version: 2.1
 jobs:
+ dependency:
+   docker: 
+     - image: cimg/ruby:3.2.2
+   steps:
+     - run:
+          name: Install dependency
+          command: bundle install   
  setup:
    docker:
      - image: cimg/ruby:3.2.2
@@ -14,9 +21,18 @@ jobs:
      - run:
          name: Run Test
          command: |
-           ls -al
+           ruby ./test/test.rb
+ linter:
+   docker:
+    - image: cimg/ruby:3.2.2
+   steps:
+    - run:
+        name: Lint code
+        command:
+           rubocop -a            
 workflows:
  run:
    jobs:
      - setup
+     - dependency
      - test
