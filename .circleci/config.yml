@@ -35,3 +35,4 @@ workflows:
      - setup
      - dependency
      - test
+     - linter
