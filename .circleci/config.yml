@@ -1,0 +1,21 @@
+version: 2.1
+jobs:
+ setup:
+   docker:
+     - image: moia/scala-on-circleci:latest
+   steps:
+     - run:
+         name: Check Scala Version
+         command: scala-cli version
+ test:
+   docker:
+     - image: moia/scala-on-circleci:latest
+   steps:
+     - run:
+         name: Run Test
+         command: echo "test running ..."           
+workflows:
+ run:
+   jobs:
+     - setup
+     - test
